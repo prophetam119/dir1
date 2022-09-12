@@ -12,323 +12,373 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
-            <div class="logo__estimation">
-                <div class="logo">
-                    <img src="./icons/WEB.svg" alt="#">
-                    <img src="./icons/rectangle.svg" alt="#">
-                    <img src="./icons/M.Y..svg" alt="#">
-                </div>
 
-                <div class="header__button">
+        <div class="popup__wrapper" id="popup">
+            <header class="popup__header">
+                <div class="popup__logo">
+                    <img src="./icons/Frame 1.svg" alt="#">
+                </div>
+                <button class="popup__cross" onclick="hidePopup()">
+                    <img src="./icons/cross.svg" alt="#">
+                </button>
+            </header>
+            <div class="popup__textbox">
+                <h1 class="popup__title">Get estimation</h1>
+                <p class="popup__description">Leave us a request and we will get back to you 
+                    as soon as possible</p>
+            </div>
+            <form action="#" method="get" class="popup__form__class">
+                
+                    <input type="text" name="username" value="" placeholder="NAME" class="popup__input__name">
+                
+                    <p class="popup__input__email__box">
+                        <p class="popup__input__email__title">
+                            e-mail
+                        </p>
+                        <input type="email" name="email" value="" class="popup__input__email">
+                    </p>
                     
+               
+                    <div class="popup__textarea__box">
+                        <p class="popup__textarea__title">
+                            More about your project
+                        </p>
+                        <p class="popup__textarea__description">
+                            I wanna some classic website
+                        </p>
+                        <textarea name="info" class="popup__input__textarea" ></textarea>
+                    </div>
                     
-                    <button class="estimation">
-                        <p class="estimation__text">Get estimation</p>
+               
+                    <button class="popup__estimation">
+                        <p class="popup__estimation__text" id="open_pop_up" onclick="hidePopup()">Get estimation</p>
                         <img src="./icons/estimationEl.svg" alt="#">
                     </button>
+                
+            </form>
+        </div>
+
+
+
+
+        <div id="main">
+            <header class="header">
+                <div class="logo__estimation">
+                    <div class="logo">
+                        <img src="./icons/Frame 1.svg" alt="#">
+                    </div>
+    
+                    <div class="header__button">
+                        
+                        
+                        <button class="estimation">
+                            <p class="estimation__text" onclick="showPopup()">Get estimation</p>
+                            <img src="./icons/estimationEl.svg" alt="#">
+                        </button>
+                        
+                        
+                    </div>
                     
-                    
+                </div>
+                <div class="header__text__block">
+                    <h1 class="header__text">We help startups develop digital world</h1>
+                    <p class="header__description">We specialised in delivering end-to-end services and moble & 
+                    web applications for innovation companies arround the world</p>
                 </div>
                 
-            </div>
-            <div class="header__text__block">
-                <div class="header__text">We help startups develop digital world</div>
-                <div class="header__description">We specialised in delivering end-to-end services and moble & 
-                web applications for innovation companies arround the world</div>
-            </div>
-            
-            
-        </div>
-        <div class="ourworks">
-            <div class="ourworks__text__title">
-                <div class="ourworks__text">
-                    Our works
+                
+            </header>
+
+            <div class="ourworks" >
+                <div class="ourworks__text__title">
+                    <h2 class="ourworks__text">
+                        Our works
+                    </h2>
+                    <p class="ourworks__description">
+                        A little of what we've been working on lately
+                    </p>
                 </div>
-                <div class="ourworks__description">
-                    A little of what we've been working on lately
-                </div>
-            </div>
-            <div class="ourworks__grid__scroll">
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks1.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        Ardor website
+                <div class="ourworks__grid__scroll" id="scroll__container">
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks1.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            Ardor website
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                UI/UX Design
+                            </p>
+                            <p class="scroll__description2">
+                                Frontend Development
+                            </p>
+                            <p class="scroll__description3">
+                                Wordpress Development 
+                            </p>
+                        </div>
+    
+    
+    
                     </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            UI/UX Design
-                        </div>
-                        <div class="scroll__description2">
-                            Frontend Development
-                        </div>
-                        <div class="scroll__description3">
-                            Wordpress Development 
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks2.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        Levrana website magazine напишите чё сами
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            Frontend Development
-                        </div>
-                        <div class="scroll__description2">
-                            Backend Development 
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks2.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            Levrana website magazine напишите чё сами
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                Frontend Development
+                            </p>
+                            <p class="scroll__description2">
+                                Backend Development 
+                            </p>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks3.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        Finatalo website
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            UI/UX Design
+    
+    
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks3.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            Finatalo website
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                UI/UX Design
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks4.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        Customs clearance and logistics
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            iOS Developmnet
+    
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks4.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            Customs clearance and logistics
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                iOS Developmnet
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks5.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        Food delivery service
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            Frontend Development
-                        </div>
-                        <div class="scroll__description2">
-                            Backend Development 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks6.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        NO:W Barbershop website 
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            UI/UX Design
-                        </div>
-                        <div class="scroll__description2">
-                            Tilda Development
+    
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks5.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            Food delivery service
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                Frontend Development
+                            </p>
+                            <p class="scroll__description2">
+                                Backend Development 
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks7.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        VIO website 
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            UI/UX Design
-                        </div>
-                        <div class="scroll__description2">
-                            Frontend Developmnet
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid__scroll__item">
-                    <img src="./img/ourworks8.png" alt="#" class="grid__scroll__img">
-                    <div class="grid__scroll__title">
-                        Fashion store 
-                    </div>
-                    <div class="grid__scroll__descriptionbox">
-                        <div class="scroll__description1">
-                            UI/UX Design
-                        </div>
-                        <div class="scroll__description2">
-                            Android Development
+    
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks6.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            NO:W Barbershop website 
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                UI/UX Design
+                            </p>
+                            <p class="scroll__description2">
+                                Tilda Development
+                            </p>
                         </div>
                     </div>
-                </div>
-
-            </div>
-
-
-
-
-
-
-        </div>
-
-        <div class="whatcanwedo">
-            <div class="whatcanwedo__textbox">
-                <div class="whatcanwedo__title">
-                    What we can do
-                </div>
-                <div class="whatcanwedo__description">
-                    Over 200 businesses, from startups to Fortune 500 companies around the globe, have chosen us as the trusted provider of dedicated development team services.
+    
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks7.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            VIO website 
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                UI/UX Design
+                            </p>
+                            <p class="scroll__description2">
+                                Frontend Developmnet
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="grid__scroll__item">
+                        <img src="./img/ourworks8.png" alt="#" class="grid__scroll__img">
+                        <h2 class="grid__scroll__title">
+                            Fashion store 
+                        </h2>
+                        <div class="grid__scroll__descriptionbox">
+                            <p class="scroll__description1">
+                                UI/UX Design
+                            </p>
+                            <p class="scroll__description2">
+                                Android Development
+                            </p>
+                        </div>
+                    </div>
+    
                 </div>
             </div>
-            <div class="whatcanwedo__flex__infobox">
-                <div class="whatcanwedo__first">
-                    <div class="whatcanwedo__first__imgbox">
-                        <img src="./icons/android.svg" class="whatcanwedo__first__pic1" alt="#">
-                        <img src="./icons/apple.svg" alt="#">
-                    </div>
-                    <div class="whatcanwedo__first__textbox">
-                        <div class="whatcanwedo__first__title">
-                            Android & iOS development
-                        </div>
-                        <div class="whatcanwedo__first__description">
-                            Some description maube in two lines maximum about that steck do you use
-                        </div>
-                    </div>
+    
+            <div class="whatcanwedo">
+                <div class="whatcanwedo__textbox">
+                    <h2 class="whatcanwedo__title">
+                        What we can do
+                    </h2>
+                    <p class="whatcanwedo__description">
+                        Over 200 businesses, from startups to Fortune 500 companies around the globe, have chosen us as the trusted provider of dedicated development team services.
+                    </p>
                 </div>
-
-                <div class="whatcanwedo__second">
-                    <div class="whatcanwedo__second__imgbox">
-                        <img src="./icons/secondflexboxEl.svg" alt="#">
-                    </div>
-                    <div class="whatcanwedo__second__textbox">
-                        <div class="whatcanwedo__second__title">
-                            UI/UX Design
+                <div class="whatcanwedo__flex__infobox">
+                    <div class="whatcanwedo__first">
+                        <div class="whatcanwedo__first__imgbox">
+                            <img src="./icons/android.svg" class="whatcanwedo__first__pic1" alt="#">
+                            <img src="./icons/apple.svg" alt="#">
                         </div>
-                        <div class="whatcanwedo__second__description">
-                            Some description maube in two lines maximum about that steck do you use
+                        <div class="whatcanwedo__first__textbox">
+                            <h2 class="whatcanwedo__first__title">
+                                Android & iOS development
+                            </h2>
+                            <p class="whatcanwedo__first__description">
+                                Some description maube in two lines maximum about that steck do you use
+                            </p>
                         </div>
                     </div>
+    
+                    <div class="whatcanwedo__second">
+                        <div class="whatcanwedo__second__imgbox">
+                            <img src="./icons/secondflexboxEl.svg" alt="#">
+                        </div>
+                        <div class="whatcanwedo__second__textbox">
+                            <h2 class="whatcanwedo__second__title">
+                                UI/UX Design
+                            </h2>
+                            <p class="whatcanwedo__second__description">
+                                Some description maube in two lines maximum about that steck do you use
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="whatcanwedo__third">
+                        <div class="whatcanwedo__third__imgbox">
+                            <p>Export failed</p>
+                        </div>
+                        <div class="whatcanwedo__third__textbox">
+                            <h2 class="whatcanwedo__third__title">
+                                Technical audit
+                            </h2>
+                            <p class="whatcanwedo__third__description">
+                                Some description maube in two lines maximum about that steck do you use
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="whatcanwedo__fourth">
+                        <div class="whatcanwedo__fourth__imgbox">
+                            <img src="./icons/fourthEl.svg" alt="#">
+                        </div>
+                        <div class="whatcanwedo__fourth__textbox">
+                            <h2 class="whatcanwedo__fourth__title">
+                                Backend development
+                            </h2>
+                            <p class="whatcanwedo__fourth__description">
+                                Some description maube in two lines maximum about that steck do you use
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="whatcanwedo__fifth">
+                        <div class="whatcanwedo__fifth__imgbox">
+                            <img src="./icons/fifth.svg" alt="#">
+                        </div>
+                        <div class="whatcanwedo__fifth__textbox">
+                            <h2 class="whatcanwedo__fifth__title">
+                                Web Development
+                            </h2>
+                            <p class="whatcanwedo__fifth__description">
+                                Some description maube in two lines maximum about that steck do you use
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="somethingmore__infobox">
+                        <div class="somethingmore__textbox">
+                            <p class="somethingmore__text">
+                                ...need something more?
+                            </p>
+                            <p class="somethingmore__description">
+                                Write to us and we'll discuss your project
+                            </p>
+                        </div>
+                        <button class="somethingmore__btn" onclick="showPopup()">
+                            <img src="./icons/somethingmoreBtn.svg" alt="#">
+                        </button>
+                    </div>
+    
+    
+    
+    
                 </div>
-
-                <div class="whatcanwedo__third">
-                    <div class="whatcanwedo__third__imgbox">
-                        <p>Export failed</p>
-                    </div>
-                    <div class="whatcanwedo__third__textbox">
-                        <div class="whatcanwedo__third__title">
-                            Technical audit
-                        </div>
-                        <div class="whatcanwedo__third__description">
-                            Some description maube in two lines maximum about that steck do you use
-                        </div>
-                    </div>
+            </div>
+    
+            <footer class="info__footer">
+                <div class="info__footer__textbox">
+                    <p class="info__footer__text">
+                        © 2022 WEB M.Y.
+                    </p>
+                    <p class="info__footer__description">
+                        Made by a small team with❤️ 
+                    </p>
                 </div>
-
-                <div class="whatcanwedo__fourth">
-                    <div class="whatcanwedo__fourth__imgbox">
-                        <img src="./icons/fourthEl.svg" alt="#">
-                    </div>
-                    <div class="whatcanwedo__fourth__textbox">
-                        <div class="whatcanwedo__fourth__title">
-                            Backend development
-                        </div>
-                        <div class="whatcanwedo__fourth__description">
-                            Some description maube in two lines maximum about that steck do you use
-                        </div>
-                    </div>
+                <div class="footer__reviews__img">
+                    <img src="./img/reviews.png" alt="#">
                 </div>
-
-                <div class="whatcanwedo__fifth">
-                    <div class="whatcanwedo__fifth__imgbox">
-                        <img src="./icons/fifth.svg" alt="#">
-                    </div>
-                    <div class="whatcanwedo__fifth__textbox">
-                        <div class="whatcanwedo__fifth__title">
-                            Web Development
-                        </div>
-                        <div class="whatcanwedo__fifth__description">
-                            Some description maube in two lines maximum about that steck do you use
-                        </div>
-                    </div>
-                </div>
-
-                <div class="somethingmore__infobox">
-                    <div class="somethingmore__textbox">
-                        <div class="somethingmore__text">
-                            ...need something more?
-                        </div>
-                        <div class="somethingmore__description">
-                            Write to us and we'll discuss your project
-                        </div>
-                    </div>
-                    <button class="somethingmore__btn">
-                        <img src="./icons/somethingmoreBtn.svg" alt="#">
+                
+                <div class="info__footer__websbox">
+                    <button onclick="window.location.href = 'https://w3docs.com';" class="websbox__btn">
+                        <img src="./icons/inst.svg" alt="#">
+                    </button>
+                    <button onclick="window.location.href = 'https://w3docs.com';" class="websbox__btn">
+                        <img src="./icons/facebook.svg" alt="#">
+                    </button>
+                    <button onclick="window.location.href = 'https://w3docs.com';" class="websbox__btn">
+                        <img src="./icons/twitter.svg" alt="#">
                     </button>
                 </div>
-
-
-
-
-            </div>
+            </footer>
+            <footer class="footer">
+                <div class="footer__textbox">
+                    <p class="footer__text">
+                        Privacy Policy
+                    </p>
+                    <p class="footer__another__text">
+                        Terms of Use
+                    </p>
+                </div>
+                <div class="language__title">
+                    <p class="language__text">
+                        English
+                    </p>
+                    <img src="./icons/languageEl.svg" alt="#">
+                </div>
+    
+    
+            </footer>
+        </div>
         </div>
 
-        <div class="info__footer">
-            <div class="info__footer__textbox">
-                <div class="info__footer__text">
-                    © 2022 WEB M.Y.
-                </div>
-                <div class="info__footer__description">
-                    Made by a small team with❤️ 
-                </div>
-            </div>
-            <div class="footer__reviews__img">
-                <img src="./img/reviews.png" alt="#">
-            </div>
-            
-            <div class="info__footer__websbox">
-                <button class="websbox__btn">
-                    <img src="./icons/inst.svg" alt="#">
-                </button>
-                <button class="websbox__btn">
-                    <img src="./icons/facebook.svg" alt="#">
-                </button>
-                <button class="websbox__btn">
-                    <img src="./icons/twitter.svg" alt="#">
-                </button>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="footer__textbox">
-                <div class="footer__text">
-                    Privacy Policy
-                </div>
-                <div class="footer__another__text">
-                    Terms of Use
-                </div>
-            </div>
-            <div class="language__title">
-                <p class="language__text">
-                    English
-                </p>
-                <img src="./icons/languageEl.svg" alt="#">
-            </div>
 
 
-        </div>
-    </div>
+
+        
+
     
 
 
 
 
-    <script defer src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
