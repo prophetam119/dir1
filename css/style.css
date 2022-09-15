@@ -66,7 +66,7 @@ input[type="submit"] {
 }
 
 .header{
-    background: url(../img/header_bg.png) no-repeat center top;
+    background: url(../img/header_bg.webp) no-repeat center top;
     width: 100%;
 }
 
@@ -988,13 +988,13 @@ flex-grow: 0;
 }
 
 .footer__text{
-    width: 64px;
-height: 10px;
+    width: 80px;
+height: 12px;
 
 font-family: 'Manrope';
 font-style: normal;
 font-weight: 500;
-font-size: 10px;
+font-size: 12px;
 line-height: 100%;
 /* identical to box height, or 10px */
 
@@ -1014,13 +1014,13 @@ padding-right: 12px;
 }
 
 .footer__another__text{
-    width: 61px;
-height: 10px;
+    width: 80px;
+height: 12px;
 
 font-family: 'Manrope';
 font-style: normal;
 font-weight: 500;
-font-size: 10px;
+font-size: 12px;
 line-height: 100%;
 /* identical to box height, or 10px */
 
@@ -1609,7 +1609,7 @@ opacity: 0.7;
 }
 
 .header{
-    background: url(../img/header_bg.png) no-repeat left;
+    background: url(../img/header_bg.webp) no-repeat left;
 }
 
 .info__footer{
@@ -1674,6 +1674,39 @@ height: 48px;
 .popup__wrapper{
     max-height: 100vh;
 }
+
+.ourworks__grid__scroll{
+    max-width: 100%;
+}
+
+.header__description{
+    width: 736px;
+}
+
+.whatcanwedo__first__title{
+    width: 406px;
+}
+
+.whatcanwedo__second__title{
+    width: 218px;
+}
+
+.whatcanwedo__third__title{
+    width: 312px;
+}
+
+.whatcanwedo__fourth__title{
+    width: 312px;
+}
+
+.whatcanwedo__fifth__title{
+    width: 406px;
+}
+
+
+
+
+
 
 }
 
@@ -1786,12 +1819,12 @@ color: #FFFFFF;
 
 .scroll__description1, .scroll__description2, .scroll__description3{
     width: 50px;
-height: 8px;
+height: 12px;
 
 font-family: 'Manrope';
 font-style: normal;
 font-weight: 500;
-font-size: 8px;
+font-size: 12px;
 line-height: 100%;
 /* identical to box height, or 8px */
 
@@ -1906,7 +1939,7 @@ height: 36px;
 font-family: 'Manrope';
 font-style: normal;
 font-weight: 400;
-font-size: 10px;
+font-size: 12px;
 line-height: 18px;
 /* or 180% */
 
@@ -1945,6 +1978,8 @@ height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 

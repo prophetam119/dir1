@@ -1,13 +1,4 @@
 "use strict";
-
-
-
-
-
-
-
-
-
 function showPopup() {
     document.getElementById("popup").style.display = "block";
     document.getElementById("popup").style.animation = "show .2s ease";
@@ -28,11 +19,9 @@ function showPopup() {
     event.preventDefault();
   
     element.scrollBy({
-      left: event.deltaY < 0 ? -100 : 100,
-      
+      left: event.deltaY < 0 ? -100 : 100,   
     });
   });
-
 
   if($(window).width() < 768){
     $(document).ready(function () {
